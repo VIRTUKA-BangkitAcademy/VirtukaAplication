@@ -5,7 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.LoginActivity"
-    android:background="@drawable/bg_login">
+    android:background="@color/navy">
+
+        <ImageView
+            android:layout_width="199dp"
+            android:layout_height="272dp"
+            android:src="@drawable/logo_log"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
 
         <TextView
             android:id="@+id/loginText"
@@ -40,6 +51,7 @@
             android:inputType="textEmailAddress"
             android:textSize="12sp"
             android:textColor="@color/cream"
+            android:background="@color/cream"
             tools:ignore="SpeakableTextPresentCheck"/>
 
 
@@ -69,7 +81,8 @@
             android:hint="@string/hint_password"
             android:inputType="textPassword"
             tools:ignore="SpeakableTextPresentCheck"
-            android:textColor="@color/cream"
+            android:textColor="@color/navy"
+            android:background="@color/cream"
             android:textSize="12sp"
             />
 
@@ -89,7 +102,8 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/passwordEditTextLayout"
-            app:layout_constraintVertical_bias="0.152" />
+            app:layout_constraintVertical_bias="0.152"
+            />
 
         <TextView
             android:id="@+id/textView4"
